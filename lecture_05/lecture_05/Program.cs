@@ -9,15 +9,15 @@ namespace lecture_05
             TimeSpan time = DateTime.Now.TimeOfDay;
             string convert = String.Format("{0:00}:{1:00}:{2:00}",
             time.Hours, time.Minutes, time.Seconds);
-            if (time.Hours < 12 && time.Hours > 9)
+            if (time.Hours <= 12 && time.Hours >= 9)
             {
                 Console.WriteLine(convert + " Good morning, guys");
             }
-            if (time.Hours > 12 && time.Hours < 15)
+            if (time.Hours >= 12 && time.Hours <= 15)
             {
                 Console.WriteLine(convert + " Good day, guys");
             }
-            if (time.Hours > 15 && time.Hours < 22)
+            if (time.Hours >= 15 && time.Hours <= 22)
             {
                 Console.WriteLine(convert + " Good evening, guys");
             }
