@@ -13,11 +13,8 @@ namespace letters
                 if (words[i] == 'a')
                 {
                     count++;
-                }
-                
-                
-            }Console.WriteLine("Numver of a" + count);
-            
+                }               
+            }Console.WriteLine("Numver of a " + count);
         }
     }
 }
